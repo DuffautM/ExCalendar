@@ -7,19 +7,29 @@
 	border: 1px solid black;
 	height: 100px;
 }
+td{
+	text-align: center;
+	font-size: 60px;
+}
 
 .red {
 	color: #FFFFFF;
 	background-color: #FF0000;
+	opacity: 0.4;
 }
 
 .green{
 	color: #FFFFFF;
 	background-color: #00FF00;
+	opacity: 0.4;
 }
 
 #table_container{
 	padding-top: 15px;
+}
+
+#month{
+	text-align: center;  
 }
 
 #selection_text{
