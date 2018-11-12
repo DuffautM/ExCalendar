@@ -1,0 +1,37 @@
+.head_table{
+	width: 150px;
+	text-align: center;
+}
+
+.case{
+	border: 1px solid black;
+	height: 100px;
+}
+
+.red {
+	color: #FFFFFF;
+	background-color: #FF0000;
+}
+
+.green{
+	color: #FFFFFF;
+	background-color: #00FF00;
+}
+
+#table_container{
+	padding-top: 15px;
+}
+
+#selection_text{
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+#selection_date{
+	width: 100%;
+	/*margin-right: 15px;*/
+}
+
+#button_ok{
+	width: 100%;
+}
