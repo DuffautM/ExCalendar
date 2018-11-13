@@ -12,15 +12,23 @@ function setTypeWeek(position, type) {
 	document.getElementById(position).classList.add(type);
 }
 
+function containsTypeWeek(position, type) {
+	return document.getElementById(position).classList.contains(type);
+}
+
+function resetTypeWeek(position, type) {
+	document.getElementById(position).classList.remove(type);
+}
+
 function clearTypeWeek() {
 	for (var y = 1; y < 5; y++) {
 		for (var x = 1; x < 7; x++) {
 			var id = "" + y  + x;
-			if(document.getElementById(id).classList.contains("red")) {
-				document.getElementById(id).classList.remove("red");
+			if(containsTypeWeek(id, "red")) {
+				resetTypeWeek(id, "red");
 			}
-			else if (document.getElementById(id).classList.contains("green")) {
-				document.getElementById(id).classList.remove("green");					
+			else if (containsTypeWeek(id, "green")) {
+				resetTypeWeek(id, "green");
 			}		
 		}
 	}
